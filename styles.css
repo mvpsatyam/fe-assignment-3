@@ -19,8 +19,6 @@ body {
 
 .calender {
   display: grid;
-  grid-template-rows: 0fr 0fr 1fr;
-  height: 100%;
 }
 
 .calender__page {
