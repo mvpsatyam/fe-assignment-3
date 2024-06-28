@@ -14,7 +14,7 @@ body {
 .container {
   background: #fff;
   border-radius: 1rem;
-  height: 97vh;
+  height: 100%;
 }
 
 .calender {
@@ -220,7 +220,7 @@ body {
 
 .calender__date__event--4 {
   grid-area: 5 / 6 / 6 / 8;
-  width: 86%;
+  width: 84%;
 }
 
 .calender__date__event--3,
