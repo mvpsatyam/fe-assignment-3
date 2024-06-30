@@ -233,7 +233,13 @@ body {
 
 .calender__date__past--month {
   grid-area: 1 / 1 / 2 / 6;
-  background: #d1d1d1;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 20px,
+    #d1d1d1 20px,
+    #d1d1d1 40px
+  );
   z-index: 2;
 }
 
