@@ -28,24 +28,24 @@ body {
   margin-bottom: 1rem;
 }
 
-.calender__page__month {
+.calender__page-month {
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
 }
 
-.calender__page__month p {
+.calender__page-month p {
   margin-bottom: 0;
   font-size: 1.25rem;
   font-weight: 500;
 }
 
-.calender__page__month--dropdown svg {
+.calender__month-dropdown svg {
   width: 0.5rem;
   fill: grey;
 }
 
-.calender__page__year {
+.calender__page-year {
   font-size: 13px;
   font-weight: 600;
   color: #aaaaaa;
@@ -66,7 +66,7 @@ body {
   grid-template-columns: repeat(7, 1fr);
 }
 
-.calender__week__day {
+.calender__week-day {
   padding: 1rem;
   text-align: center;
 }
@@ -75,89 +75,89 @@ body {
   grid-template-rows: repeat(5, 1fr);
 }
 
-.calender__date__item {
+.calender__date-item {
   padding: 1rem 1.25rem;
   text-align: right;
   border: #e7e7e7 1px solid;
 }
 
-.calender__date__item:first-child {
+.calender__date-item:first-child {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.calender__date__item:first-of-type,
-.calender__date__item:nth-child(8n) {
+.calender__date-item:first-of-type,
+.calender__date-item:nth-child(8n) {
   border-left: 0;
 }
 
-.calender__date__item:nth-child(7n) {
+.calender__date-item:nth-child(7n) {
   border-right: 0;
 }
 
-.calender__date__item:nth-child(2) {
+.calender__date-item:nth-child(2) {
   grid-area: 1 / 1 / 2 / 3;
 }
 
-.calender__date__item:nth-child(3) {
+.calender__date-item:nth-child(3) {
   grid-area: 1 / 1 / 2 / 4;
 }
 
-.calender__date__item:nth-child(4) {
+.calender__date-item:nth-child(4) {
   grid-area: 1 / 1 / 2 / 5;
 }
 
-.calender__date__item:nth-child(5) {
+.calender__date-item:nth-child(5) {
   grid-area: 1 / 1 / 2 / 6;
 }
 
-.calender__date__item:nth-child(6) {
+.calender__date-item:nth-child(6) {
   grid-area: 1 / 1 / 2 / 7;
 }
 
-.calender__date__item:nth-child(9) {
+.calender__date-item:nth-child(9) {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.calender__date__item:nth-child(10) {
+.calender__date-item:nth-child(10) {
   grid-area: 2 / 3 / 3 / 4;
 }
 
-.calender__date__item:nth-child(11) {
+.calender__date-item:nth-child(11) {
   grid-area: 2 / 4 / 3 / 5;
 }
 
-.calender__date__item:nth-child(12) {
+.calender__date-item:nth-child(12) {
   grid-area: 2 / 5 / 3 / 6;
 }
 
-.calender__date__item:nth-child(13) {
+.calender__date-item:nth-child(13) {
   grid-area: 2 / 6 / 3 / 7;
 }
 
-.calender__date__item:nth-child(17) {
+.calender__date-item:nth-child(17) {
   grid-area: 3 / 3 / 4 / 4;
 }
 
-.calender__date__item:nth-child(18) {
+.calender__date-item:nth-child(18) {
   grid-area: 3 / 4 / 4 / 5;
 }
 
-.calender__date__item:nth-child(19) {
+.calender__date-item:nth-child(19) {
   grid-area: 3 / 5 / 4 / 6;
 }
 
-.calender__date__item:nth-child(34) {
+.calender__date-item:nth-child(34) {
   grid-area: 5 / 6 / 6 / 7;
 }
 
-.calender__date__item:nth-child(35) {
+.calender__date-item:nth-child(35) {
   grid-area: 5 / 7 / 6 / 8;
 }
 
-.calender__date__event--1,
-.calender__date__event--2,
-.calender__date__event--3,
-.calender__date__event--4 {
+.calender__event-1,
+.calender__event-2,
+.calender__event-3,
+.calender__event-4 {
   text-align: left;
   padding: 0 20px;
   margin: 0 10px 8px 10px;
@@ -168,7 +168,7 @@ body {
   border-left: 5px solid;
 }
 
-.calender__date__event--1 {
+.calender__event-1 {
   margin-top: 40px;
   grid-area: 2 / 4 / 3 / 7;
   z-index: 1;
@@ -176,62 +176,62 @@ body {
   background: #ffbb87c2;
 }
 
-.calender__date__event--1:hover {
+.calender__event-1:hover {
   color: #fff;
   background: #ee6e0c;
   border-left-color: #ee6e0c;
   box-shadow: rgba(238, 110, 12, 0.4) 0px 4px 12px;
 }
 
-.calender__date__event--2 {
+.calender__event-2 {
   grid-area: 2 / 2 / 3 / 5;
   color: #b2001d;
   background: #ffc3cd;
 }
 
-.calender__date__event--2:hover {
+.calender__event-2:hover {
   color: #fff;
   background-color: #b2001d;
   border-left-color: #b2001d;
   box-shadow: rgba(178, 0, 29, 0.4) 0px 4px 12px;
 }
 
-.calender__date__event--3 {
+.calender__event-3 {
   grid-area: 3 / 3 / 4 / 6;
 }
 
-.calender__date__event--3:hover,
-.calender__date__event--4:hover {
+.calender__event-3:hover,
+.calender__event-4:hover {
   color: #fff;
   background: #0c89d1;
   border-left-color: #0c89d1;
   box-shadow: rgba(12, 137, 209, 0.4) 0px 4px 12px;
 }
 
-.calender__date__event--4 {
+.calender__event-4 {
   grid-area: 5 / 6 / 6 / 8;
 }
 
-.calender__date__event--3,
-.calender__date__event--4 {
+.calender__event-3,
+.calender__event-4 {
   color: #0c89d1;
   background: #ebfbff;
 }
 
-.calender__date__event--2,
-.calender__date__event--3,
-.calender__date__event--4 {
+.calender__event-2,
+.calender__event-3,
+.calender__event-4 {
   margin-top: 73px;
 }
 
-.calender__date__event--1:hover,
-.calender__date__event--2:hover,
-.calender__date__event--3:hover,
-.calender__date__event--4:hover {
+.calender__event-1:hover,
+.calender__event-2:hover,
+.calender__event-3:hover,
+.calender__event-4:hover {
   border-radius: 4px;
 }
 
-.calender__date__past--month {
+.calender__past-month {
   grid-area: 1 / 1 / 2 / 6;
   background-image: repeating-linear-gradient(
     -45deg,
@@ -243,11 +243,11 @@ body {
   z-index: 2;
 }
 
-.calender__date__item:first-child,
-.calender__date__item:nth-child(2),
-.calender__date__item:nth-child(3),
-.calender__date__item:nth-child(4),
-.calender__date__item:nth-child(5),
-.calender__date__item:nth-child(6) {
+.calender__date-item:first-child,
+.calender__date-item:nth-child(2),
+.calender__date-item:nth-child(3),
+.calender__date-item:nth-child(4),
+.calender__date-item:nth-child(5),
+.calender__date-item:nth-child(6) {
   z-index: 3;
 }
